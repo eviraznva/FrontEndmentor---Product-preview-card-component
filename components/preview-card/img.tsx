@@ -13,5 +13,10 @@ const Image = styled.div<ImgProps>`
 `;
 
 export function Img(props: ImgProps): JSX.Element {
-  return <Image {...props} className="h-full w-full bg-cover md:w-1/2" />;
+  return (
+    <Image
+      {...props}
+      className="h-full w-full rounded-tl-3xl rounded-tr-3xl bg-cover md:w-1/2 md:rounded-tr-none  md:rounded-bl-3xl"
+    />
+  );
 }
